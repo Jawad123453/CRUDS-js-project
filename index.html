@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="fast.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <script src="https://kit.fontawesome.com/094cb2e4ea.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="centering">
+    <h1>CRUDS</h1>
+    <p>Create Read Update Delete Search</p>
+  </div>
+  <div class="main-project">
+    <div class="contaner">
+      <input type="text" placeholder="Title" id="Title">
+      <div class="detales">
+        <input type="number" placeholder="price" id="price">
+        <input type="number" placeholder="taxes" id="taxes">
+        <input type="number" placeholder="ads" id="ads">
+        <input type="number" placeholder="discont" id="discont">
+        <span class="btntotal">Total</span>
+      </div>
+      <input type="number" placeholder="Count" id="Count">
+      <input type="text" placeholder="Catigory" id="Catigory">
+      <button class="makingnewbtn disable" id="createnewelem">Create</button>
+      <button class="makingnewbtn disappear" id="Updatenewelem">Update</button>
+      <input type="text" placeholder="Search" id="Search" class="disappear">
+      <div class="detales">
+        <button class="makingnewbtn disappear chooseone" id="SearchByT">Search By Title</button>
+        <button class="makingnewbtn disappear" id="SearchByC">Search By Catigory</button>
+      </div>
+      <button class="makingnewbtn disappear" id="delete-all">Delete All (<span class="contthem"></span>)</button>
+    </div>
+  </div>
+  <div class="main-reult disappear">
+    <div class="contaner">
+      <table></table>
+    </div>
+  </div>
+  <script src="fast.js"></script>
+</body>
+</html>

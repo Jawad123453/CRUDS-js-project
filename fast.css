@@ -1,0 +1,188 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  background-color: rgb(48, 48, 48);
+  color:white;
+}
+/* main contaner */
+.contaner{
+  width: 1100px;
+  margin: 0 auto;
+}
+@media (max-width:1250px) {
+  .contaner{
+    width: 900px;
+  }
+}
+@media (max-width:1000px) {
+  .contaner{
+    width: 800px;
+  }
+}
+@media (max-width:900px){
+  .contaner{
+    width: 700px;
+  }
+}
+@media (max-width:750px){
+  .contaner{
+    width: 450px;
+  }
+}
+@media (max-width:550px){
+  .contaner{
+    width: 300px;
+  }
+}
+/* Start */
+.centering{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:10px;
+  margin: 20px 0;
+}
+.centering h1{
+  font-size: 35px;
+}
+.centering p{
+  font-size: 20px;
+  font-weight: normal;
+}
+/* Needed info */
+.main-project .contaner input{
+  width: 100%;
+  padding:10px 20px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  background-color: black;
+  color:white;
+  border-radius: 10px;
+  border: none;
+  transition: 0.3s linear;
+}
+.main-project .contaner input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+@media (max-width:800px) {
+  .main-project .contaner input{
+    margin-bottom: 20px;
+  }
+}
+.main-project .contaner input:focus{
+  outline: none;
+  transform: scale(1.05);
+}
+.main-project .contaner .detales{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap:20px;
+}
+@media (max-width:800px) {
+  .main-project .contaner .detales{
+    flex-direction: column;
+    gap:0px;
+  }
+}
+.main-project .contaner .detales span.btntotal{
+  background-color: indianred;
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  height:50px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:10px 15px;
+  border: none;
+  border-radius: 10px;
+}
+@media (max-width:800px) {
+  .main-project .contaner .detales span.btntotal{
+    margin-bottom: 20px;
+  }
+}
+.main-project .contaner .detales span.btntotal.full{
+  background-color: greenyellow;
+  color:black;
+}
+.main-project .contaner button.makingnewbtn{
+  padding:10px 20px;
+  color:white;
+  font-size: 22px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  border:none;
+  width: 100%;
+  background-color: rgb(0, 174, 255);
+  margin: 10px 0 20px;
+}
+.main-project .contaner .detales button.makingnewbtn{
+  margin: 10px 0;
+  transition: 0.3s linear;
+}
+.main-project .contaner .detales button.makingnewbtn.chooseone{
+  transform: scale(1.05);
+  background-color: greenyellow;
+  color:black;
+  font-weight: bold;
+}
+.disable{
+  opacity: 0.3;
+  pointer-events: none;
+  cursor:auto;
+}
+.disappear{
+  display: none;
+}
+@media (max-width:800px) {
+  .main-project .contaner .detales button.btntotal{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .main-project .contaner button.makingnewbtn{
+    margin: 0 0 20px;
+  }
+  .main-project .contaner > button:last-child{
+    margin: 10px 0;
+  }
+}
+/* showing data */
+.main-reult{
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+.main-reult .contaner table{
+  width: 100%;
+}
+@media (max-width:750px) {
+  .main-reult .contaner{
+    overflow-x: auto;
+  }
+}
+.main-reult .contaner table, th, td {
+  border: 1px solid #777;
+  border-collapse: collapse;
+}
+.main-reult .contaner table tr th{
+  padding:5px;
+}
+.main-reult .contaner table th button{
+  background-color: rgb(0, 174, 255);
+  border: none;
+  border-radius: 20px;
+  padding:5px 10px;
+  color:white;
+  font-size: 14px;
+  cursor: pointer;
+}
